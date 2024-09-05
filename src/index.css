@@ -1,0 +1,58 @@
+@tailwind base;
+
+h1, h2, h3 {
+  line-height: 1.1;
+}
+
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+
+  body {
+    @apply bg-offWhite font-sans font-light;
+  }
+  h1, h2, h3 {
+    @apply font-serif font-medium uppercase;
+  }
+  h1 {
+    @apply text-[12vw] sm:text-[6vw] xl:text-7xl;
+  }
+  h2 {
+    @apply text-4xl lg:text-5xl;
+  }
+  h3 {
+    @apply text-2xl lg:text-3xl;
+  }
+  h4 {
+    @apply text-lg lg:text-xl font-medium;
+  }
+  p {
+    @apply leading-relaxed;
+  }
+  img {
+    @apply w-full h-full object-cover;
+  }
+}
+
+@layer components {
+  .logo {
+    @apply w-[150px] block;
+  }
+  .wrapper {
+    @apply px-4 max-w-6xl mx-auto;
+  }
+  .btn {
+    @apply px-8 py-4 border border-black flex items-center gap-2 capitalize font-normal text-center;
+  }
+  .btn-tertiary {
+    @apply flex gap-2 items-center capitalize font-normal hover:underline;
+  }
+  .inputs {
+    @apply border border-slate-200 p-3 w-full outline-none;
+  }
+  .active {
+    @apply bg-black text-white;
+  }
+}
