@@ -12,7 +12,7 @@ export default function Accordion({ servicesList }) {
     }
   };
   return (
-    <section className="my-[100px]">
+    <section className="my-[50px] lg:my-[100px]">
         <div className="wrapper">
            
               <ul className="space-y-2">

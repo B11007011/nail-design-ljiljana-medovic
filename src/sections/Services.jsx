@@ -29,7 +29,7 @@ export default function Services({ showTitle = true }) {
   return (
     <section className="my-[50px] lg:my-[100px]">
       <div className="wrapper">
-      {showTitle && <h2 className="mb-[50px] sm:text-center">naše usluge</h2>}
+      {showTitle && <h2 className="mb-6 sm:mb-12 sm:text-center">naše usluge</h2>}
         <div className="flex flex-wrap justify-center gap-y-6 gap-4 xl:gap-8">
           {services.map((service, index) => (
             <div key={index} className="sm:w-[calc((100%/2)-8px)] lg:w-[calc((100%/3)-24px)]">

@@ -55,8 +55,8 @@ export default function BreadCrumb({ page }) {
   return (
     <header>
       <div className="wrapper">
-        <div className="bg-accent p-[40px] flex justify-between items-center">
-          <ul className="flex gap-2 font-normal capitalize">
+        <div className="bg-accent p-6 lg:p-8 flex justify-between items-center">
+          <ul className="flex flex-wrap gap-2 font-normal capitalize">
             {!isServiceDetailPage && service  ? (
               <>
                 <li>

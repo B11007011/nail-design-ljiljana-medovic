@@ -14,9 +14,9 @@ export default function Gallery({ servicesGallery }) {
   };
 
   return (
-    <section className="my-[100px]">
+    <section className="my-[50px] lg:my-[100px]">
       <div className="wrapper">
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
           {servicesGallery.map((item, index) => (
             <div
               className="overflow-hidden aspect-square cursor-pointer group"

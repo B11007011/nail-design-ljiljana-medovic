@@ -58,13 +58,13 @@ export default function ServicesPageDetails() {
   return (
     <>
     <BreadCrumb page="Usluge"/>
-    <section className='my-[100px]'>
+    <section className='my-[50px] lg:my-[100px]'>
         <div className="wrapper">
-            <div className='flex items-center gap-16'>
-            <div className='h-[500px] w-1/2'>
+            <div className='flex flex-col items-center gap-8 sm:flex-row lg:gap-16'>
+            <div className='h-[400px] lg:h-[500px] w-full sm:w-1/2'>
                 <img src={service.servicesImg} alt="" />
             </div>
-           <div className='w-1/2'>
+           <div className='sm:w-1/2'>
            <h2 className="mb-8">{service.servicesTitle}</h2>
            <p>{service.servicesDesc}</p>
            </div>

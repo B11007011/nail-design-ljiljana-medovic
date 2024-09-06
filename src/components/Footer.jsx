@@ -42,7 +42,7 @@ export default function Footer() {
     <footer>
       <div className="wrapper">
         <div className="flex justify-between flex-col sm:flex-row sm:flex-wrap gap-6 py-[50px] lg:py-[100px] border-b border-gray-300">
-          <div className="w-[350px]">
+          <div className="max-w-[350px]">
             <Link to="/" className="logo">
               <img src="/logo.svg" alt="Nail Design Ljiljana Medović Logo" />
             </Link>
@@ -64,22 +64,26 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-          <ul className="space-y-2">
-            <li className="font-medium">Brzi linkovi</li>
+          <div>
+            <p className="font-medium mb-2">Brzi linkovi</p>
+          <ul className="flex flex-wrap gap-2 sm:flex-col">
             {footerLinks.map((link, index) => (
               <li key={index}>
                 <Link to={link.url}>{link.name}</Link>
               </li>
             ))}
           </ul>
-          <ul className="space-y-2">
-            <li className="font-medium">Usluge</li>
+          </div>
+          <div>
+            <p className="font-medium mb-2">Usluge</p>
+          <ul className="flex flex-wrap gap-2 sm:flex-col">
             {services.map((service, index) => (
               <li key={index}>
                 <Link to={service.path}>{service.name}</Link>
               </li>
             ))}
           </ul>
+          </div>
           <ul className="space-y-2">
             <li className="font-medium">Kontakt informacije</li>
             {contactInfo.map((contact, index) => (
@@ -92,7 +96,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        <div className="flex flex-wrap items-start gap-6 justify-between py-6 font-normal">
+        <div className="flex flex-wrap-reverse items-start gap-6 justify-between py-6">
           <p>
             &copy; {currentYear} Nail Design Ljiljana Medović. Developed by{" "}
             <a className="underline" href="https://github.com/stefanelli990" target="_blank">
