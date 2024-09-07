@@ -1,43 +1,10 @@
-import { Link } from "react-router-dom"
-import { GrFacebookOption } from "react-icons/gr";
-import { SiInstagram } from "react-icons/si";
+import { Link } from "react-router-dom";
+import { navLinks, services, contactInfo, socialLinks } from "../data";
 
 export default function Footer() {
+
   const currentYear = new Date().getFullYear();
-  const socialLinks = [
-    {
-      url: "https://www.facebook.com/ljiljana.medovicnailharmony/?locale=sr_RS",
-      icon: <GrFacebookOption />,
-    },
-    {
-      url: "https://www.instagram.com/ljiljanamedovic/",
-      icon: <SiInstagram />,
-    },
-  ];
-  const footerLinks = [
-    { name: "Početna", url: "/" },
-    { name: "Usluge", url: "/usluge" },
-    { name: "O Nama", url: "/about" },
-    { name: "Kontakt", url: "/contact" },
-  ];
-  const services = [
-    { name: "Manikir", path: "/services/manikir" },
-    { name: "Trajna šminka", path: "/services/trajna-šminka" },
-    { name: "Edukacije", path: "/services/edukacije" },
-  ];
-  const contactInfo = [
-    { name: "+381621162977", info: "tel:+381621162977", icon: '/images/phone-icon.svg' },
-    {
-      name: "ljiljana.medovic@gmail.com",
-      info: "mailto:ljiljana.medovic@gmail.com",
-      icon: '/images/envelope-icon.svg'
-    },
-    {
-      name: "Marija Bursaća 8, Niš",
-      info: "https://www.google.com/maps/place/Nail+Design+Ljiljana+Medovi%C4%87/@43.3133352,21.8964168,15z/data=!4m2!3m1!1s0x0:0x8f2e902bfc6d7ccb?sa=X&ved=1t:2428&ictx=111",
-      icon: '/images/map-marker-icon.svg'
-    },
-  ];
+  
   return (
     <footer>
       <div className="wrapper">
@@ -54,11 +21,11 @@ export default function Footer() {
               {socialLinks.map((link, index) => (
                 <li key={index}>
                   <a
-                    className="h-[50px] w-[50px] flex justify-center items-center rounded-full border border-black text-xl"
+                    className="h-[50px] w-[50px] flex justify-center items-center rounded-full border border-black"
                     href={link.url}
                     target="_blank"
                   >
-                    {link.icon}
+                    <img className="w-[22px] h-[22px]" src={link.icon} alt=""/>
                   </a>
                 </li>
               ))}
@@ -67,7 +34,7 @@ export default function Footer() {
           <div>
             <p className="font-medium mb-2">Brzi linkovi</p>
           <ul className="flex flex-wrap gap-2 sm:flex-col">
-            {footerLinks.map((link, index) => (
+            {navLinks.map((link, index) => (
               <li key={index}>
                 <Link to={link.url}>{link.name}</Link>
               </li>
@@ -78,8 +45,8 @@ export default function Footer() {
             <p className="font-medium mb-2">Usluge</p>
           <ul className="flex flex-wrap gap-2 sm:flex-col">
             {services.map((service, index) => (
-              <li key={index}>
-                <Link to={service.path}>{service.name}</Link>
+              <li key={index} className="capitalize">
+                <Link to={`/usluge/${service.pageUrl}`}>{service.servicesTitle}</Link>
               </li>
             ))}
           </ul>

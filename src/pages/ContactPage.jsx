@@ -1,25 +1,6 @@
 import BreadCrumb from "../components/BreadCrumb";
+import { contactInfo } from "../data";
 
-const contactInfo = [
-  {
-    type: 'Telefon',
-    name: "+381621162977",
-    info: "tel:+381621162977",
-    icon: "/images/phone-icon.svg",
-  },
-  {
-    type: 'Email',
-    name: "ljiljana.medovic@gmail.com",
-    info: "mailto:ljiljana.medovic@gmail.com",
-    icon: "/images/envelope-icon.svg",
-  },
-  {
-    type: 'Adresa',
-    name: "Marija Bursaća 8, Niš",
-    info: "https://www.google.com/maps/place/Nail+Design+Ljiljana+Medovi%C4%87/@43.3133352,21.8964168,15z/data=!4m2!3m1!1s0x0:0x8f2e902bfc6d7ccb?sa=X&ved=1t:2428&ictx=111",
-    icon: "/images/map-marker-icon.svg",
-  },
-];
 
 export default function ContactPage() {
   return (

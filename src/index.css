@@ -44,10 +44,10 @@ h1, h2, h3 {
     @apply px-4 max-w-6xl mx-auto;
   }
   .btn {
-    @apply px-8 py-4 border border-black flex items-center gap-2 capitalize font-normal text-center;
+    @apply px-8 py-4 border border-black flex items-center gap-2 capitalize text-center;
   }
   .btn-tertiary {
-    @apply flex gap-2 items-center capitalize font-normal hover:underline;
+    @apply flex gap-2 items-center capitalize underline;
   }
   .inputs {
     @apply border border-slate-200 p-3 w-full outline-none;

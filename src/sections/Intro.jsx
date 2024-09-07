@@ -1,8 +1,5 @@
-const counter = [
-  {counterTitle: 'Zadovoljnih mušterija', counterValue: 1000},
-  {counterTitle: 'Održanih obuka', counterValue: 500},
-  {counterTitle: 'Godina postojanja', counterValue: 25}
-]
+import { counter } from '../data';
+import introImg from '../assets/intro-img.jpg';
 
 export default function Intro() {
   return (
@@ -23,7 +20,7 @@ export default function Intro() {
             
             </div>
             <div className="h-[400px] relative">
-            <img src="/images/intro-img.jpg" alt="" className="w-full"/>
+            <img src={introImg} alt="" className="w-full"/>
             <div className="bg-black/25 absolute inset-0"></div>
             </div>
 

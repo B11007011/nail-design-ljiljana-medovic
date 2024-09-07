@@ -1,14 +1,9 @@
-import { Link, useLocation } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom";
+import { navLinks } from "../data";
 
 export default function Navbar() {
     const location = useLocation()
 
-    const navLinks = [
-        {name: 'Početna', url: '/'},
-        {name: 'Usluge', url: '/usluge'},
-        {name: 'O Nama', url: '/o-nama'},
-        {name: 'Kontakt', url: '/kontakt'},
-    ]
   return (
     <header className="relative bg-offWhite top-0 left-0 right-0 z-10">
       <div className="wrapper py-4 flex items-center justify-between  text-black lg:py-6">
@@ -18,7 +13,7 @@ export default function Navbar() {
         <nav>
         <ul className="hidden md:flex items-center gap-6">
             {navLinks.map((navLink, index) => (
-              <li key={index} className="group relative capitalize font-normal">
+              <li key={index} className="group relative capitalize">
                 <Link to={navLink.url}>{navLink.name}</Link>
                 {(location.pathname === navLink.url || 
                   (navLink.url === '/usluge' && location.pathname.startsWith('/usluge'))) && (
