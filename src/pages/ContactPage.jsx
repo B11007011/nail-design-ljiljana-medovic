@@ -7,16 +7,16 @@ export default function ContactPage() {
     <>
       <BreadCrumb page="Kontakt"/>
       <section className="my-[50px] lg:my-[100px]">
-        <div className="wrapper text-center">
-          <div className="max-w-3xl mx-auto mb-[50px]">
-          <h2 className="mb-6 sm:mb-12">kontaktirajte nas</h2>
-          <p>Bilo da imate pitanja o našim uslugama, želite da saznate više o našem timu stručnjaka, ili da zakažete svoj sledeći termin, ovde smo da vam pomognemo. Vaše zadovoljstvo je naš prioritet, i radujemo se svakom vašem javljanju!</p>
+        <div className="wrapper">
+          <div className="max-w-xl mx-auto mb-[50px] sm:text-center">
+          <h2 className="mb-6 sm:mb-12">Kontaktirajte nas</h2>
+          <p>Bilo da imate pitanja o našim uslugama, želite da saznate više o našem salonu, ili da zakažete svoj sledeći termin, ovde smo da vam pomognemo.</p>
           </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {contactInfo.map((item, index) => (
             <a href={item.info} className="h-[200px] flex items-center justify-center flex-col gap-2 border border-gray-300 cursor-pointer" key={index} target="_blank">
               <img className="w-[40px] h-[40px]" src={item.icon} alt="" />
-              <h4>{item.type}</h4>
+              <h3>{item.type}</h3>
               <p>{item.name}</p>
             </a>
           ))}

@@ -9,7 +9,7 @@ export default function Footer() {
     <footer>
       <div className="wrapper">
         <div className="flex justify-between flex-col sm:flex-row sm:flex-wrap gap-6 py-[50px] lg:py-[100px] border-b border-gray-300">
-          <div className="max-w-[350px]">
+          <div className="max-w-[335px]">
             <Link to="/" className="logo">
               <img src="/logo.svg" alt="Nail Design Ljiljana Medović Logo" />
             </Link>
@@ -32,7 +32,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <p className="font-medium mb-2">Brzi linkovi</p>
+            <h4 className="mb-4">Brzi linkovi</h4>
           <ul className="flex flex-wrap gap-2 sm:flex-col">
             {navLinks.map((link, index) => (
               <li key={index}>
@@ -42,7 +42,7 @@ export default function Footer() {
           </ul>
           </div>
           <div>
-            <p className="font-medium mb-2">Usluge</p>
+            <h4 className="mb-4">Usluge</h4>
           <ul className="flex flex-wrap gap-2 sm:flex-col">
             {services.map((service, index) => (
               <li key={index} className="capitalize">
@@ -51,8 +51,9 @@ export default function Footer() {
             ))}
           </ul>
           </div>
+          <div>
+          <h4 className="mb-4">Kontakt informacije</h4>
           <ul className="space-y-2">
-            <li className="font-medium">Kontakt informacije</li>
             {contactInfo.map((contact, index) => (
               <li key={index}>
                 <a href={contact.info} target="_blank">
@@ -61,6 +62,7 @@ export default function Footer() {
               </li>
             ))}
           </ul>
+          </div>
         </div>
 
         <div className="flex flex-wrap-reverse items-start gap-6 justify-between py-6">

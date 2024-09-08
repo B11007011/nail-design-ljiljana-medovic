@@ -11,22 +11,22 @@ h1, h2, h3 {
 @layer base {
 
   body {
-    @apply bg-offWhite font-sans font-light;
+    @apply bg-offWhite font-sans text-darkColor;
   }
-  h1, h2, h3 {
-    @apply font-serif font-medium uppercase;
+  h1, h2, h3, h4 {
+    @apply font-serif font-medium;
   }
   h1 {
-    @apply text-[12vw] sm:text-[6vw] xl:text-7xl;
+    @apply text-[15vw] sm:text-[7vw] xl:text-[85px];
   }
   h2 {
     @apply text-4xl lg:text-5xl;
   }
   h3 {
-    @apply text-2xl lg:text-3xl;
+    @apply text-2xl;
   }
   h4 {
-    @apply text-lg lg:text-xl font-medium;
+    @apply text-xl;
   }
   p {
     @apply leading-relaxed;

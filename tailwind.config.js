@@ -7,6 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        darkColor: '#252525',
         offWhite: '#FCFCFC',
         accent: '#FFF1F6'
       },

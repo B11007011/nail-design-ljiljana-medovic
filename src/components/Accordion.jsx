@@ -19,7 +19,7 @@ export default function Accordion({ servicesList }) {
               {servicesList.map((item,index) => (
                 <li key={index} className="">
                     <button onClick={() => toggleAccordion(index)} className="px-6 py-5 cursor-pointer w-full flex text-left justify-between items-center gap-4 border border-gray-300">
-                        <h4>{item.servicesListTitle}</h4>
+                        <h3>{item.servicesListTitle}</h3>
                         <div className="relative">
                             <div className="w-[18px] h-[0.1rem] bg-black"></div>
                             <div className={`w-[18px] h-[0.1rem] bg-black absolute top-1/2 -translate-y-1/2 transition-transform duration-200 ${openIndex === index ? 'rotate-0' : 'rotate-90'}`}></div>
