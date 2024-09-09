@@ -45,7 +45,7 @@ export default function Footer() {
             <h4 className="mb-4">Usluge</h4>
           <ul className="flex flex-wrap gap-2 sm:flex-col">
             {services.map((service, index) => (
-              <li key={index} className="capitalize">
+              <li key={index}>
                 <Link to={`/usluge/${service.pageUrl}`}>{service.servicesTitle}</Link>
               </li>
             ))}
