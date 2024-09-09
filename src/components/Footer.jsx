@@ -45,7 +45,7 @@ export default function Footer() {
             <h4 className="mb-4">Usluge</h4>
           <ul className="flex flex-wrap gap-2 sm:flex-col">
             {services.map((service, index) => (
-              <li key={index}>
+              <li key={index} className="capitalize">
                 <Link to={`/usluge/${service.pageUrl}`}>{service.servicesTitle}</Link>
               </li>
             ))}
@@ -74,10 +74,10 @@ export default function Footer() {
           </p>
           <ul className="flex gap-6">
             <li>
-              <Link>Politika Privatnosti</Link>
+            Politika Privatnosti
             </li>
             <li>
-              <Link>Uslovi Koriscenja</Link>
+            Uslovi Koriscenja
             </li>
           </ul>
         </div>
