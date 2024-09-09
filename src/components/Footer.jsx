@@ -2,9 +2,8 @@ import { Link } from "react-router-dom";
 import { navLinks, services, contactInfo, socialLinks } from "../data";
 
 export default function Footer() {
-
   const currentYear = new Date().getFullYear();
-  
+
   return (
     <footer>
       <div className="wrapper">
@@ -25,7 +24,7 @@ export default function Footer() {
                     href={link.url}
                     target="_blank"
                   >
-                    <img className="w-[22px] h-[22px]" src={link.icon} alt=""/>
+                    <img className="w-[22px] h-[22px]" src={link.icon} alt="" />
                   </a>
                 </li>
               ))}
@@ -33,52 +32,54 @@ export default function Footer() {
           </div>
           <div>
             <h4 className="mb-4">Brzi linkovi</h4>
-          <ul className="flex flex-wrap gap-2 sm:flex-col">
-            {navLinks.map((link, index) => (
-              <li key={index}>
-                <Link to={link.url}>{link.name}</Link>
-              </li>
-            ))}
-          </ul>
+            <div className="flex flex-wrap gap-2 sm:flex-col">
+              {navLinks.map((link, index) => (
+      
+                  <Link key={index} to={link.url}>{link.name}</Link>
+         
+              ))}
+            </div>
           </div>
           <div>
             <h4 className="mb-4">Usluge</h4>
-          <ul className="flex flex-wrap gap-2 sm:flex-col">
-            {services.map((service, index) => (
-              <li key={index} className="capitalize">
-                <Link to={`/usluge/${service.pageUrl}`}>{service.servicesTitle}</Link>
-              </li>
-            ))}
-          </ul>
+            <ul className="flex flex-wrap gap-2 sm:flex-col">
+              {services.map((service, index) => (
+                <li key={index} className="capitalize">
+                  <Link to={`/usluge/${service.pageUrl}`}>
+                    {service.servicesTitle}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
           <div>
-          <h4 className="mb-4">Kontakt informacije</h4>
-          <ul className="space-y-2">
-            {contactInfo.map((contact, index) => (
-              <li key={index}>
-                <a href={contact.info} target="_blank">
-                  {contact.name}
-                </a>
-              </li>
-            ))}
-          </ul>
+            <h4 className="mb-4">Kontakt informacije</h4>
+            <ul className="space-y-2">
+              {contactInfo.map((contact, index) => (
+                <li key={index}>
+                  <a href={contact.info} target="_blank">
+                    {contact.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
 
         <div className="flex flex-wrap-reverse items-start gap-6 justify-between py-6">
           <p>
-            &copy; {currentYear} Nail Design Ljiljana Medović. Developed by{" "}
-            <a className="underline" href="https://github.com/stefanelli990" target="_blank">
-              stefanelli990
+            &copy; {currentYear} Nail Design Ljiljana Medović. Developed by&nbsp;
+            <a
+              className="underline"
+              href="https://github.com/stefanelli990"
+              target="_blank"
+            >
+            stefanelli990
             </a>
           </p>
           <ul className="flex gap-6">
-            <li>
-            Politika Privatnosti
-            </li>
-            <li>
-            Uslovi Koriscenja
-            </li>
+            <li>Politika Privatnosti</li>
+            <li>Uslovi Koriscenja</li>
           </ul>
         </div>
       </div>

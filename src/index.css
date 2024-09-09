@@ -38,7 +38,7 @@ h1, h2, h3 {
 
 @layer components {
   .logo {
-    @apply w-[150px] block;
+    @apply w-[125px] block;
   }
   .wrapper {
     @apply px-4 max-w-6xl mx-auto;

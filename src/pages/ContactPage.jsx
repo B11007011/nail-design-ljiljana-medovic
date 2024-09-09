@@ -9,7 +9,7 @@ export default function ContactPage() {
       <section className="my-[50px] lg:my-[100px]">
         <div className="wrapper">
           <div className="max-w-xl mx-auto mb-[50px] sm:text-center">
-          <h2 className="mb-6 sm:mb-12">Kontaktirajte nas</h2>
+          <h2 className="mb-6">Kontaktirajte nas</h2>
           <p>Bilo da imate pitanja o našim uslugama, želite da saznate više o našem salonu, ili da zakažete svoj sledeći termin, ovde smo da vam pomognemo.</p>
           </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
