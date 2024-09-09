@@ -11,21 +11,21 @@ export default function Navbar() {
           <img src="/logo.svg" alt="Nail Design Ljiljana Medović Logo" />
         </Link>
         <nav>
-        <ul className="hidden md:flex items-center gap-6">
+        <div className="hidden md:flex items-center gap-6">
             {navLinks.map((navLink, index) => (
-              <li key={index} className="group relative capitalize">
+              <div key={index} className="group relative capitalize">
                 <Link to={navLink.url}>{navLink.name}</Link>
                 {(location.pathname === navLink.url || 
                   (navLink.url === '/usluge' && location.pathname.startsWith('/usluge'))) && (
                   <div className="absolute -bottom-1 bg-black h-[1px] w-5"></div>
                 )}
                 <div className="absolute -bottom-1 bg-black h-[1px] w-0 group-hover:w-5 transition-all duration-300"></div>
-              </li>
+              </div>
             ))}
-            <li>
+           
               <a href="#" className="btn">Zakažite Termin</a>
-            </li>
-          </ul>
+         
+          </div>
         </nav>
         <button
        

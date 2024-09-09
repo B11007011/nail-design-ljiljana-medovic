@@ -34,39 +34,33 @@ export default function Footer() {
             <h4 className="mb-4">Brzi linkovi</h4>
             <div className="flex flex-wrap gap-2 sm:flex-col">
               {navLinks.map((link, index) => (
-      
                   <Link key={index} to={link.url}>{link.name}</Link>
-         
               ))}
             </div>
           </div>
           <div>
             <h4 className="mb-4">Usluge</h4>
-            <ul className="flex flex-wrap gap-2 sm:flex-col">
+            <div className="flex flex-wrap gap-2 sm:flex-col">
               {services.map((service, index) => (
-                <li key={index} className="capitalize">
-                  <Link to={`/usluge/${service.pageUrl}`}>
+                  <Link key={index} className="capitalize" to={`/usluge/${service.pageUrl}`}>
                     {service.servicesTitle}
                   </Link>
-                </li>
               ))}
-            </ul>
+            </div>
           </div>
           <div>
             <h4 className="mb-4">Kontakt informacije</h4>
-            <ul className="space-y-2">
+            <div className="flex flex-col space-y-2">
               {contactInfo.map((contact, index) => (
-                <li key={index}>
-                  <a href={contact.info} target="_blank">
+                  <a key={index} href={contact.info} target="_blank">
                     {contact.name}
                   </a>
-                </li>
               ))}
-            </ul>
+            </div>
           </div>
         </div>
 
-        <div className="flex flex-wrap-reverse items-start gap-6 justify-between py-6">
+        <div className="py-6 text-center">
           <p>
             &copy; {currentYear} Nail Design Ljiljana Medović. Developed by&nbsp;
             <a
@@ -77,10 +71,6 @@ export default function Footer() {
             stefanelli990
             </a>
           </p>
-          <ul className="flex gap-6">
-            <li>Politika Privatnosti</li>
-            <li>Uslovi Koriscenja</li>
-          </ul>
         </div>
       </div>
     </footer>
