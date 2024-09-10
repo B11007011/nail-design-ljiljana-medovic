@@ -1,11 +1,13 @@
 import BreadCrumb from "../components/BreadCrumb";
 import { contactInfo } from "../data";
-
+import Footer from "../components/Footer";
+import Cta from "../sections/Cta";
 
 export default function ContactPage() {
   return (
     <>
       <BreadCrumb page="Kontakt"/>
+      <main>
       <section className="my-[50px] lg:my-[100px]">
         <div className="wrapper">
           <div className="max-w-xl mx-auto mb-[50px] sm:text-center">
@@ -26,6 +28,9 @@ export default function ContactPage() {
         </div>
         </div>
       </section>
+      </main>
+      <Cta/>
+      <Footer/>
     </>
   );
 }

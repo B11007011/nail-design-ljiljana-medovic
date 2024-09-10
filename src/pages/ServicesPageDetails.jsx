@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom'
 import Gallery from '../components/Gallery';
 import BreadCrumb from "../components/BreadCrumb";
 import { services } from '../data';
+import Footer from "../components/Footer";
+import Cta from "../sections/Cta";
 
 export default function ServicesPageDetails() {
   
@@ -15,6 +17,7 @@ export default function ServicesPageDetails() {
   return (
     <>
     <BreadCrumb page="Usluge"/>
+    <main>
     <section className='my-[50px] lg:my-[100px]'>
         <div className="wrapper">
             <div className='flex flex-col items-center gap-8 sm:flex-row lg:gap-16'>
@@ -30,6 +33,10 @@ export default function ServicesPageDetails() {
     </section>
     <Accordion servicesList={service.servicesList} />
     <Gallery servicesGallery={service.servicesGallery}/>
+    </main>
+
+    <Cta/>
+    <Footer/>
     </>
   )
 }

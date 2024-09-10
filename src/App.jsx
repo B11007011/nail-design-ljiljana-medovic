@@ -4,29 +4,30 @@ import AboutPage from "./pages/AboutPage";
 import ServicesPage from "./pages/ServicesPage";
 import ContactPage from "./pages/ContactPage";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Cta from "./sections/Cta";
 import ServicesPageDetails from "./pages/ServicesPageDetails";
 import ScrollToTop from "./components/ScrollToTop";
+import { AnimatePresence } from 'framer-motion';
+import PageAnimation from "./components/PageAnimations";
 
 
 function App() {
-  
+
   const location = useLocation(); 
 
   return (
     <>
     <ScrollToTop/>
       <Navbar/>
+      <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/usluge" element={<ServicesPage />} />
-        <Route path="/o-nama" element={<AboutPage />} />
-        <Route path="/kontakt" element={<ContactPage />} />
-        <Route path="/usluge/:title" element={<ServicesPageDetails />} />
+        <Route path="/" element={<PageAnimation><HomePage /></PageAnimation>} />
+        <Route path="/usluge" element={<PageAnimation><ServicesPage /></PageAnimation>} />
+        <Route path="/o-nama" element={<PageAnimation><AboutPage /></PageAnimation>} />
+        <Route path="/kontakt" element={<PageAnimation><ContactPage /></PageAnimation>} />
+        <Route path="/usluge/:title" element={<PageAnimation><ServicesPageDetails /></PageAnimation>} />
       </Routes>
-      <Cta/>
-      <Footer/>
+      </AnimatePresence>
+    
     </>
   )
 }

@@ -9,7 +9,9 @@ h1, h2, h3 {
 
 
 @layer base {
-
+  html {
+    @apply scroll-smooth;
+  }
   body {
     @apply bg-offWhite font-sans text-darkColor;
   }
@@ -44,10 +46,10 @@ h1, h2, h3 {
     @apply px-4 max-w-6xl mx-auto;
   }
   .btn {
-    @apply px-8 py-4 border border-black flex items-center gap-2 capitalize text-center;
+    @apply px-8 py-4 border border-black flex items-center gap-2 capitalize text-center duration-150 hover:bg-darkColor hover:text-white;
   }
   .btn-tertiary {
-    @apply flex gap-2 items-center capitalize underline;
+    @apply flex gap-2 items-center capitalize hover:underline;
   }
   .inputs {
     @apply border border-slate-200 p-3 w-full outline-none;

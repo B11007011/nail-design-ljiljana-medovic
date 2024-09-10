@@ -1,5 +1,7 @@
 import BreadCrumb from "../components/BreadCrumb";
 import { aboutSection } from "../data";
+import Footer from "../components/Footer";
+import Cta from "../sections/Cta";
 
 export default function AboutPage() {
   return (
@@ -27,6 +29,8 @@ export default function AboutPage() {
           </div>
         </section>
       </main>
+      <Cta/>
+      <Footer/>
     </>
   );
 }

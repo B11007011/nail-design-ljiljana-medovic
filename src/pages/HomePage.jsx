@@ -1,7 +1,9 @@
 import { Helmet, HelmetProvider } from "react-helmet-async"
 import Hero from "../sections/Hero"
-import Intro from "../sections/Intro"
-import Services from "../sections/Services"
+import Intro from "../sections/Intro";
+import Services from "../sections/Services";
+import Footer from "../components/Footer";
+import Cta from "../sections/Cta";
 
 export default function HomePage() {
   return (
@@ -19,6 +21,8 @@ export default function HomePage() {
         <Intro />
         <Services />
       </main>
+      <Cta/>
+      <Footer/>
     </HelmetProvider>
   );
 }

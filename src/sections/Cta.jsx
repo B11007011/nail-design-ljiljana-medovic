@@ -9,7 +9,7 @@ export default function Cta() {
             <h2 className="mb-6">Zakazite vaš <br /> termin već danas</h2>
             <p>Bilo da ste ovde na manikiru ili uživate u nekom od naših drugih tretmana, možete očekivati vrhunsku uslugu i personalizovan pristup. Verujemo da će vam boravak kod nas biti prijatan, a rezultati - zadivljujući. Radujemo se prilici da vam pružimo najbolje od lepote i nege.</p>
             </div>
-            <a href="tel:+381641162977" className="btn" target="_blank">Zakažite Termin</a>
+            <a href="tel:+381641162977" className="btn">Zakažite Termin</a>
             <img className="-z-[1] absolute inset-0 transform scale-x-[-1]" src={cherryBlossomsImg} alt="" />
         </div>
         </div>

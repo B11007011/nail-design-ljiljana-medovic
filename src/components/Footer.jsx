@@ -60,17 +60,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="py-6 text-center">
-          <p>
-            &copy; {currentYear} Nail Design Ljiljana Medović. Developed by&nbsp;
-            <a
-              className="underline"
-              href="https://github.com/stefanelli990"
-              target="_blank"
-            >
-            stefanelli990
-            </a>
-          </p>
+        <div className="py-6 text-center">&copy; {currentYear} Nail Design Ljiljana Medović. Developed by&nbsp;
+            <a className="underline" href="https://github.com/stefanelli990" target="_blank">stefanelli990</a>
         </div>
       </div>
     </footer>
