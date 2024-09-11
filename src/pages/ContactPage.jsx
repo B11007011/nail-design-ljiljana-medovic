@@ -1,11 +1,15 @@
-import BreadCrumb from "../components/BreadCrumb";
-import { contactInfo } from "../data";
-import Footer from "../components/Footer";
-import Cta from "../sections/Cta";
+import BreadCrumb from "../components/BreadCrumb"
+import { contactInfo } from "../data"
+import Footer from "../components/Footer"
+import Cta from "../sections/Cta"
+import { Helmet, HelmetProvider } from "react-helmet-async"
 
 export default function ContactPage() {
   return (
-    <>
+   <HelmetProvider>
+    <Helmet>
+      <title>Nail Design Ljiljana Medović | Kontakt</title>
+      </Helmet>
       <BreadCrumb page="Kontakt"/>
       <main>
       <section className="my-[50px] lg:my-[100px]">
@@ -31,6 +35,6 @@ export default function ContactPage() {
       </main>
       <Cta/>
       <Footer/>
-    </>
+      </HelmetProvider>
   );
 }

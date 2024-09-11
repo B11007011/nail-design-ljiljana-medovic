@@ -18,7 +18,7 @@ export default function Services({ showTitle = true }) {
                 <img src={service.servicesImg} alt="" />
               </div>
               <h3>{service.servicesTitle}</h3>
-              <p className="my-3 line-clamp-3">{service.servicesDesc}</p>
+              <p className="mt-3 mb-4 line-clamp-3">{service.servicesDesc}</p>
               <div className="inline-block">
                 <Link to={`/usluge/${service.pageUrl}`} className="btn-tertiary">
                   <span>pročitajte više</span>

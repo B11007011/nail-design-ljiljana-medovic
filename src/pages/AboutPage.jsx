@@ -1,11 +1,15 @@
-import BreadCrumb from "../components/BreadCrumb";
-import { aboutSection } from "../data";
-import Footer from "../components/Footer";
-import Cta from "../sections/Cta";
+import BreadCrumb from "../components/BreadCrumb"
+import { aboutSection } from "../data"
+import Footer from "../components/Footer"
+import Cta from "../sections/Cta"
+import { Helmet, HelmetProvider } from "react-helmet-async"
 
 export default function AboutPage() {
   return (
-    <>
+    <HelmetProvider>
+      <Helmet>
+      <title>Nail Design Ljiljana Medović | O Nama</title>
+      </Helmet>
       <BreadCrumb page="O nama" />
       <main>
         <section>
@@ -31,6 +35,6 @@ export default function AboutPage() {
       </main>
       <Cta/>
       <Footer/>
-    </>
+      </HelmetProvider>
   );
 }

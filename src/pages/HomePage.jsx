@@ -9,13 +9,8 @@ export default function HomePage() {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Nail Design Ljiljana Medović | Home</title>
-        <meta
-          name="description"
-          content="Welcome to NM Photography portfolio. Discover breathtaking images and explore the artistry behind each shot."
-        />
+        <title>Nail Design Ljiljana Medović | Početna</title>
       </Helmet>
-
       <main>
         <Hero />
         <Intro />
