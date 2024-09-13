@@ -1,4 +1,4 @@
-import cherryBlossomsImg from '../assets/cherry-blossoms-img.png';
+import cherryBlossomsImg from '../assets/cherry-blossoms-img.webp';
 
 export default function Cta() {
   return (
@@ -10,7 +10,7 @@ export default function Cta() {
             <p>Bilo da ste ovde na manikiru ili uživate u nekom od naših drugih tretmana, možete očekivati vrhunsku uslugu i personalizovan pristup. Verujemo da će vam boravak kod nas biti prijatan, a rezultati - zadivljujući. Radujemo se prilici da vam pružimo najbolje od lepote i nege.</p>
             </div>
             <a href="tel:+381641162977" className="btn">Zakažite Termin</a>
-            <img className="-z-[1] absolute inset-0 transform scale-x-[-1]" src={cherryBlossomsImg} alt="" />
+            <img className="-z-[1] absolute inset-0 transform scale-x-[-1]" src={cherryBlossomsImg} alt="Cherry blossoms with a pastel pink background." />
         </div>
         </div>
     </section>

@@ -3,6 +3,7 @@ import { aboutSection } from "../data"
 import Footer from "../components/Footer"
 import Cta from "../sections/Cta"
 import { Helmet, HelmetProvider } from "react-helmet-async"
+import Navbar from "../components/Navbar";
 
 export default function AboutPage() {
   return (
@@ -10,6 +11,7 @@ export default function AboutPage() {
       <Helmet>
       <title>Nail Design Ljiljana Medović | O Nama</title>
       </Helmet>
+      <Navbar/>
       <BreadCrumb page="O nama" />
       <main>
         <section>

@@ -4,6 +4,7 @@ import Intro from "../sections/Intro";
 import Services from "../sections/Services";
 import Footer from "../components/Footer";
 import Cta from "../sections/Cta";
+import Navbar from "../components/Navbar";
 
 export default function HomePage() {
   return (
@@ -11,6 +12,7 @@ export default function HomePage() {
       <Helmet>
         <title>Nail Design Ljiljana Medović | Početna</title>
       </Helmet>
+      <Navbar/>
       <main>
         <Hero />
         <Intro />

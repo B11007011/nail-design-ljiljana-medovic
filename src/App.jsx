@@ -3,11 +3,11 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ServicesPage from "./pages/ServicesPage";
 import ContactPage from "./pages/ContactPage";
-import Navbar from "./components/Navbar";
 import ServicesPageDetails from "./pages/ServicesPageDetails";
-import ScrollToTop from "./components/ScrollToTop";
 import { AnimatePresence } from 'framer-motion';
 import PageAnimation from "./components/PageAnimations";
+
+import ScrollToTop from "./components/ScrollToTop";
 
 
 function App() {
@@ -16,9 +16,10 @@ function App() {
 
   return (
     <>
-    <ScrollToTop/>
-      <Navbar/>
+   
       <AnimatePresence mode="wait">
+      <ScrollToTop/>
+    
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<PageAnimation><HomePage /></PageAnimation>} />
         <Route path="/usluge" element={<PageAnimation><ServicesPage /></PageAnimation>} />

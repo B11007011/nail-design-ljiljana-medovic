@@ -1,6 +1,6 @@
-import manicureImg from './assets/manicure-img.jpg';
-import permanentMakeupImg from './assets/permanent-makeup-img.jpg';
-import educationsImg from './assets/educations-img.jpg';
+import manicureImg from './assets/manicure-img.webp';
+import permanentMakeupImg from './assets/permanent-makeup-img.webp';
+import educationsImg from './assets/educations-img.webp';
 
 import galleryManicure1 from './assets/gallery-manicure-1.jpg';
 import galleryManicure2 from './assets/gallery-manicure-2.jpg';
@@ -132,15 +132,13 @@ export const services = [
     {
       url: "https://www.facebook.com/ljiljana.medovicnailharmony/?locale=sr_RS",
       icon: facebookIcon,
+      ariaLabel: 'Visit Facebook page',
+      alt: 'Facebook icon'
     },
     {
       url: "https://www.instagram.com/ljiljanamedovic/",
       icon: instagramIcon,
+      ariaLabel: 'Visit Instagram page',
+      alt: 'Instagram icon'
     },
-  ];
-
-  export const counter = [
-    {counterTitle: 'Zadovoljnih mušterija', counterValue: 1000},
-    {counterTitle: 'Održanih obuka', counterValue: 500},
-    {counterTitle: 'Godina postojanja', counterValue: 25}
   ];

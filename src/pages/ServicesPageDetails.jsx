@@ -5,6 +5,8 @@ import BreadCrumb from "../components/BreadCrumb";
 import { services } from '../data';
 import Footer from "../components/Footer";
 import Cta from "../sections/Cta";
+import Navbar from "../components/Navbar";
+import { HelmetProvider, Helmet } from 'react-helmet-async';
 
 export default function ServicesPageDetails() {
   
@@ -15,7 +17,11 @@ export default function ServicesPageDetails() {
     return <div className="text-center py-16">Service not found</div>;
   }
   return (
-    <>
+    <HelmetProvider>
+      <Helmet>
+      <title>Nail Design Ljiljana Medović | Usluge</title>
+      </Helmet>
+    <Navbar/>
     <BreadCrumb page="Usluge"/>
     <main>
     <section className='my-[50px] lg:my-[100px]'>
@@ -37,6 +43,6 @@ export default function ServicesPageDetails() {
 
     <Cta/>
     <Footer/>
-    </>
+    </HelmetProvider>
   )
 }
