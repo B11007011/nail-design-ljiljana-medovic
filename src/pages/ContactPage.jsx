@@ -22,7 +22,7 @@ export default function ContactPage() {
           </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {contactInfo.map((item, index) => (
-            <a href={item.info} className="h-[200px] flex items-center justify-center flex-col gap-2 border border-gray-300 cursor-pointer" key={index} target="_blank">
+            <a href={item.info} className="h-[200px] flex items-center justify-center flex-col gap-2 border border-gray-300 cursor-pointer" key={index}>
               <img className="w-[40px] h-[40px]" src={item.icon} alt="" />
               <h3>{item.type}</h3>
               <p>{item.name}</p>

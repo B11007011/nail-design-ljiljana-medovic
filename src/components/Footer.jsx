@@ -32,7 +32,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <div className="mb-4 text-xl">Brzi linkovi</div>
+            <div className="mb-4 text-xl font-serif">Brzi linkovi</div>
             <div className="flex flex-wrap gap-2 sm:flex-col">
               {navLinks.map((link, index) => (
                   <Link key={index} to={link.url}>{link.name}</Link>
@@ -40,7 +40,7 @@ export default function Footer() {
             </div>
           </div>
           <div>
-            <div className="mb-4 text-xl">Usluge</div>
+            <div className="mb-4 text-xl font-serif">Usluge</div>
             <div className="flex flex-wrap gap-2 sm:flex-col">
               {services.map((service, index) => (
                   <Link key={index} className="capitalize" to={`/usluge/${service.pageUrl}`}>
@@ -50,10 +50,10 @@ export default function Footer() {
             </div>
           </div>
           <div>
-            <div className="mb-4 text-xl">Kontakt informacije</div>
+            <div className="mb-4 text-xl font-serif">Kontakt informacije</div>
             <div className="flex flex-col space-y-2">
               {contactInfo.map((contact, index) => (
-                  <a key={index} href={contact.info} target="_blank">
+                  <a key={index} href={contact.info}>
                     {contact.name}
                   </a>
               ))}

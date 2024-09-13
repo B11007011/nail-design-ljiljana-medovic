@@ -13,7 +13,7 @@ export default function Navbar() {
       <header className="relative bg-offWhite top-0 left-0 right-0 z-10">
       <div className="wrapper py-4 flex items-center justify-between  text-black lg:py-6">
         <Link to="/" className="logo">
-          <img src="/logo.svg" alt="Nail Design Ljiljana Medović Logo" />
+          <img src="/logo.svg" alt="Nail Design Ljiljana Medović logo" />
         </Link>
         <nav>
         <div className="hidden md:flex items-center gap-6">

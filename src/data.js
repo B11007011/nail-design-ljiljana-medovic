@@ -32,8 +32,8 @@ import galleryeducation7 from './assets/gallery-education-7.jpg';
 import galleryeducation8 from './assets/gallery-education-8.jpg';
 import galleryeducation9 from './assets/gallery-education-9.jpg';
 
-import aboutImg1 from './assets/about-img-1.jpg';
-import aboutImg2 from './assets/about-img-2.jpg';
+import aboutImg1 from './assets/about-img-1.webp';
+import aboutImg2 from './assets/about-img-2.webp';
 
 import envelopeIcon from './assets/envelope-icon.svg';
 import mapMarkerIcon from './assets/map-marker-icon.svg';
@@ -98,12 +98,14 @@ export const services = [
       aboutTItle: "Naša priča",
       aboutDesc:
         "Sve je počelo pre više od 25 godina, kada je Ljiljana Medović, inspirisana strašću prema lepoti i željom da stvori jedinstvene trenutke za svoje klijente, otvorila svoj prvi salon. Od tada, svakodnevno se trudimo da svakom klijentu pružimo iskustvo koje ga čini negovanim i zadovoljnim. Tokom godina, postali smo sinonim za kvalitet i profesionalizam. Naš salon je prepoznatljiv po posebnom fokusu na negu i ulepšavanje noktiju, uključujući izradu salonskih noktiju, kao i organizaciju obuka za nail dizajnere i takmičare. Kroz stalno usavršavanje i praćenje najnovijih trendova u industriji lepote, uspevamo da pružimo usluge koje zadovoljavaju najviše standarde.",
+      altImg: "Ljiljana Medovic demonstrating her style and professionalism in a posed photo."
     },
     {
       aboutImg: aboutImg2,
       aboutTItle: "Naša vizija",
       aboutDesc:
         "Želimo da budemo više od običnog kozmetičkog salona – mesto gde se svaka osoba oseća cenjeno, inspirisano i podržano u svojoj lepoti i jedinstvenosti. Verujemo da lepota dolazi iznutra, ali i da pažljivo negovan spoljašnji izgled može doprineti samopouzdanju i unutrašnjem miru. Zato se posvećujemo stalnom unapređenju naših veština, praćenju najnovijih trendova i korišćenju najkvalitetnijih proizvoda. Nastavićemo da gradimo poverenje kroz profesionalizam, posvećenost i toplu atmosferu u kojoj se svako oseća kao kod kuće.",
+        altImg: "Close-up of hands with long, elaborately designed acrylic nails resting on a certificate."
     },
   ];
 

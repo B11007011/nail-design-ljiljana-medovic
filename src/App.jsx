@@ -7,19 +7,12 @@ import ServicesPageDetails from "./pages/ServicesPageDetails";
 import { AnimatePresence } from 'framer-motion';
 import PageAnimation from "./components/PageAnimations";
 
-import ScrollToTop from "./components/ScrollToTop";
-
-
 function App() {
 
   const location = useLocation(); 
 
   return (
-    <>
-   
-      <AnimatePresence mode="wait">
-      <ScrollToTop/>
-    
+    <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<PageAnimation><HomePage /></PageAnimation>} />
         <Route path="/usluge" element={<PageAnimation><ServicesPage /></PageAnimation>} />
@@ -27,9 +20,7 @@ function App() {
         <Route path="/kontakt" element={<PageAnimation><ContactPage /></PageAnimation>} />
         <Route path="/usluge/:title" element={<PageAnimation><ServicesPageDetails /></PageAnimation>} />
       </Routes>
-      </AnimatePresence>
-    
-    </>
+    </AnimatePresence>
   )
 }
 

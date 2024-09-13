@@ -23,7 +23,7 @@ export default function AboutPage() {
                   className="flex flex-col sm:flex-row sm:even:flex-row-reverse items-center gap-8 lg:gap-20 mb-[50px] lg:mb-[100px]"
                 >
                   <div className="w-full sm:w-1/2 h-[500px]">
-                    <img src={section.aboutImg} alt="" />
+                    <img src={section.aboutImg} alt={section.altImg} />
                   </div>
                   <div className="sm:w-1/2">
                     <h2 className="mb-6">{section.aboutTItle}</h2>
