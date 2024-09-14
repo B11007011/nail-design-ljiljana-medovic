@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://naildesign-ljiljanamedovic.com/sitemap.xml
