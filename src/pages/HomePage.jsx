@@ -11,6 +11,7 @@ export default function HomePage() {
     <HelmetProvider>
       <Helmet>
         <title>Nail Design Ljiljana Medović | Početna</title>
+        <meta name="description" content="Dobrodošli u naš kutak lepote i elegancije u srcu Niša. Posvetite se nezi u našem salonu gde je vaša lepota naš prioritet."/>
       </Helmet>
       <Navbar/>
       <main>

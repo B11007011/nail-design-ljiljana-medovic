@@ -115,18 +115,21 @@ export const services = [
       name: "+381621162977",
       info: "tel:+381621162977",
       icon: phoneIcon,
+      altIcon: 'Phone icon'
     },
     {
       type: 'Email',
       name: "ljiljana.medovic@gmail.com",
       info: "mailto:ljiljana.medovic@gmail.com",
       icon: envelopeIcon,
+      altIcon: 'Envelope icon'
     },
     {
       type: 'Adresa',
       name: "Marija Bursaća 8, Niš",
       info: "https://www.google.com/maps/place/Nail+Design+Ljiljana+Medovi%C4%87/@43.3133352,21.8964168,15z/data=!4m2!3m1!1s0x0:0x8f2e902bfc6d7ccb?sa=X&ved=1t:2428&ictx=111",
       icon: mapMarkerIcon,
+      altIcon: 'Map marker icon'
     },
   ];
 

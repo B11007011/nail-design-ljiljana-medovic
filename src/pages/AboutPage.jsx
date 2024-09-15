@@ -10,6 +10,7 @@ export default function AboutPage() {
     <HelmetProvider>
       <Helmet>
       <title>Nail Design Ljiljana Medović | O Nama</title>
+      <meta name="description" content="Saznajte više o nama i našoj posvećenosti nezi noktiju i lepoti."/>
       </Helmet>
       <Navbar/>
       <BreadCrumb page="O nama" />

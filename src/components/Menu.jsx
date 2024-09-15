@@ -68,24 +68,26 @@ export default function Menu({ open, setOpen }) {
 
   return (
     <>
-        <motion.div animate={open ? 'open' : 'closed'} variants={variantsOverlay} className="bg-black/50 fixed inset-0 invisible h-full w-full z-10" onClick={() => setOpen(false)}></motion.div>
+        <motion.div animate={open ? 'open' : 'closed'} variants={variantsOverlay} role="navigation" className="bg-black/50 fixed inset-0 invisible h-full w-full z-10" onClick={() => setOpen(false)}></motion.div>
         <motion.div animate={open ? 'open' : 'closed'} variants={menuVariants} className="bg-white fixed top-0 -right-80 h-full flex items-center justify-center z-10 w-80">
             <button onClick={() => setOpen(false)} className="h-8 w-8 absolute text-3xl top-8 right-8 duration-500 hover:rotate-90 hover:scale-[.75] " aria-label="Close menu">
                 <div className="bg-black w-8 h-[0.1rem] rotate-45 relative top-[1px]"></div>
                 <div className="bg-black w-8 h-[0.1rem] -rotate-45"></div>
             </button>
-            <motion.div animate={open ? 'open' : 'closed'} variants={navLinksVariants} className="space-y-8 text-xl">
+            <motion.ul animate={open ? 'open' : 'closed'} variants={navLinksVariants} className="space-y-8 text-xl">
                 {navLinks.map((navLink, index) => (
-                    <motion.div key={index} variants={navLinkVariants} className="group relative">
+                    <motion.li key={index} variants={navLinkVariants} className="group relative">
                         <Link to={navLink.url} onClick={() => setOpen(false)}>{navLink.name}</Link>
                         {(location.pathname === navLink.url || 
                   (navLink.url === '/usluge' && location.pathname.startsWith('/usluge'))) && (
                   <div className="absolute -bottom-1 bg-black h-[1px] w-5"></div>
                 )}
-                    </motion.div>
+                    </motion.li>
                 ))}
-                <motion.a href="tel:+381641162977" className="btn" variants={navLinkVariants}>Zakažite Termin</motion.a>
-            </motion.div>
+                <motion.li variants={navLinkVariants}>
+                <a href="tel:+381641162977" className="btn">Zakažite Termin</a>
+                </motion.li>
+            </motion.ul>
         </motion.div>
     </>
   )

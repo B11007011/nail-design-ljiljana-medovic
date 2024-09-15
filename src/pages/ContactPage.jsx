@@ -10,6 +10,7 @@ export default function ContactPage() {
    <HelmetProvider>
     <Helmet>
       <title>Nail Design Ljiljana Medović | Kontakt</title>
+        <meta name="description" content="Bilo da imate pitanja o našim uslugama ili da zakažete svoj sledeći termin, ovde smo da vam pomognemo."/>
       </Helmet>
       <Navbar/>
       <BreadCrumb page="Kontakt"/>
@@ -23,7 +24,7 @@ export default function ContactPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {contactInfo.map((item, index) => (
             <a href={item.info} className="h-[200px] flex items-center justify-center flex-col gap-2 border border-gray-300 cursor-pointer" key={index}>
-              <img className="w-[40px] h-[40px]" src={item.icon} alt="" />
+              <img className="w-[40px] h-[40px]" src={item.icon} alt={item.altIcon} />
               <h3>{item.type}</h3>
               <p>{item.name}</p>
             </a>

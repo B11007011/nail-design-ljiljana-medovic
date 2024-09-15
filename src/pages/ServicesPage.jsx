@@ -11,6 +11,7 @@ export default function ServicesPage() {
     <HelmetProvider>
       <Helmet>
       <title>Nail Design Ljiljana Medović | Usluge</title>
+      <meta name="description" content="Istražite širok spektar profesionalnih usluga u našem salonu, uključujući manikir, trajnu šminku i još mnogo toga."/>
       </Helmet>
       <Navbar/>
     <BreadCrumb page="Usluge"/>
