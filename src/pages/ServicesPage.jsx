@@ -12,6 +12,9 @@ export default function ServicesPage() {
       <Helmet>
       <title>Nail Design Ljiljana Medović | Usluge</title>
       <meta name="description" content="Istražite širok spektar profesionalnih usluga u našem salonu, uključujući manikir, trajnu šminku i još mnogo toga."/>
+      <meta property="og:title" content="Nail Design Ljiljana Medović | Usluge" />
+      <meta property="og:description" content="Istražite širok spektar profesionalnih usluga u našem salonu, uključujući manikir, trajnu šminku i još mnogo toga." />
+      <meta property="og:url" content="https://naildesign-ljiljanamedovic.com/usluge" />
       </Helmet>
       <Navbar/>
     <BreadCrumb page="Usluge"/>
