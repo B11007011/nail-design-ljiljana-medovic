@@ -11,7 +11,6 @@ export default function AboutPage() {
       <Helmet>
         <title>Nail Design Ljiljana Medović | O Nama</title>
         <meta name="description" content="Saznajte više o nama i našoj posvećenosti nezi noktiju i lepoti."/>
-        <meta property="og:image" content="https://naildesign-ljiljanamedovic.com/og-image-about.webp" />
         <meta property="og:title" content="Nail Design Ljiljana Medović | O Nama" />
         <meta property="og:description" content="Saznajte više o nama i našoj posvećenosti nezi noktiju i lepoti." />
         <meta property="og:url" content="https://naildesign-ljiljanamedovic.com/o-nama" />

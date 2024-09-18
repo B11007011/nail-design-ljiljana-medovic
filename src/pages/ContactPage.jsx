@@ -10,9 +10,9 @@ export default function ContactPage() {
    <HelmetProvider>
     <Helmet>
       <title>Nail Design Ljiljana Medović | Kontakt</title>
-        <meta name="description" content="Bilo da imate pitanja o našim uslugama ili da zakažete svoj sledeći termin, ovde smo da vam pomognemo."/>
-        <meta property="og:title" content="Nail Design Ljiljana Medović | Kontakt" />
-      <meta property="og:description" content="Bilo da imate pitanja o našim uslugama ili da zakažete svoj sledeći termin, ovde smo da vam pomognemo." />
+      <meta name="description" content="Bilo da imate pitanja o našim uslugama ili da zakažete svoj sledeći termin, ovde smo da vam pomognemo."/>
+      <meta property="og:title" content="Nail Design Ljiljana Medović | Kontakt" />
+      <meta property="og:description" content="Bilo da imate pitanja o našim uslugama ili da zakažete svoj sledeći termin, ovde smo da vam pomognemo."/>
       <meta property="og:url" content="https://naildesign-ljiljanamedovic.com/kontakt" />
       </Helmet>
       <Navbar/>
