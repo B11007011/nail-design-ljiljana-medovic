@@ -9,9 +9,6 @@ h1, h2, h3 {
 
 
 @layer base {
-  html {
-    @apply text-sm sm:text-base;
-  }
   body {
     @apply bg-offWhite font-sans text-darkColor;
   }
