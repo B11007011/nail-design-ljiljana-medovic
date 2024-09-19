@@ -5,7 +5,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <section>
+    <footer>
       <div className="wrapper">
         <div className="flex justify-between flex-col sm:flex-row sm:flex-wrap gap-6 py-[50px] lg:py-[100px] border-b border-gray-300">
           
@@ -91,6 +91,6 @@ export default function Footer() {
           </a>
         </div>
       </div>
-    </section>
+    </footer>
   );
 }
