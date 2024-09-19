@@ -10,7 +10,7 @@ h1, h2, h3 {
 
 @layer base {
   body {
-    @apply bg-offWhite font-sans text-darkColor;
+    @apply bg-offWhite font-sans text-sm sm:text-base text-darkColor;
   }
   h1, h2, h3, h4 {
     @apply font-serif font-medium;
