@@ -27,7 +27,6 @@ export default function Navbar() {
                 <div className="absolute -bottom-1 bg-black h-[1px] w-0 group-hover:w-5 transition-all duration-300"></div>
               </div>
             ))}
-            <a href="tel:+381641162977" className="btn">Zakažite Termin</a>
           </div>
         </nav>
         <button onClick={() => setOpen(!open)} aria-label="Open menu" className="w-8 h-8 flex justify-center flex-col space-y-[7px] items-end group md:hidden">

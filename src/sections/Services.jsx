@@ -11,10 +11,10 @@ export default function Services({ showTitle = true }) {
      <h2 className="mb-6 sm:mb-12">Naše usluge</h2>
      {/* <p>Verujemo da lepota dolazi kroz pažljivo negovanje i stručan pristup. Bez obzira na to da li želite manikir ili neku od naših drugih usluga, mi smo tu da ispunimo sva vaša očekivanja.</p> */}
      </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-6 gap-4 xl:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-8 gap-4 xl:gap-8">
           {services.map((service, index) => (
             <div key={index}>
-              <div className="aspect-square mb-8">
+              <div className="aspect-square mb-6">
                 <img src={service.servicesImg} alt="" />
               </div>
               <h3>{service.servicesTitle}</h3>

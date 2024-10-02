@@ -3,6 +3,9 @@
 h1, h2, h3 {
   line-height: 1.1;
 }
+p {
+  line-height: 160%;
+}
 
 @tailwind components;
 @tailwind utilities;
@@ -27,9 +30,6 @@ h1, h2, h3 {
   h4 {
     @apply text-xl;
   }
-  p {
-    @apply leading-relaxed;
-  }
   img {
     @apply w-full h-full object-cover;
   }
@@ -43,7 +43,13 @@ h1, h2, h3 {
     @apply px-4 max-w-6xl mx-auto;
   }
   .btn {
-    @apply px-8 py-4 border border-black flex items-center gap-2 capitalize text-center duration-200 hover:bg-darkColor hover:text-white;
+    @apply px-8 py-4 border border-black flex items-center gap-2 capitalize text-center duration-200;
+  }
+  .btn-primary {
+    @apply bg-darkColor text-white hover:bg-transparent hover:text-darkColor;
+  }
+  .btn-outline {
+    @apply bg-transparent text-darkColor hover:bg-darkColor hover:text-white;
   }
   .btn-tertiary {
     @apply flex gap-2 items-center capitalize hover:underline;

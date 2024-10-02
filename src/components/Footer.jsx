@@ -22,13 +22,13 @@ export default function Footer() {
               {socialLinks.map((link, index) => (
                 <li key={index}>
                   <a
-                    className="h-[50px] w-[50px] flex justify-center items-center rounded-full border border-black"
+                    className="group h-[50px] w-[50px] flex justify-center items-center rounded-full border border-black hover:bg-black duration-200"
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={link.ariaLabel}
                   >
-                    <img className="w-[22px] h-[22px]" src={link.icon} alt={link.alt} />
+                    <link.icon className="text-xl group-hover:text-white duration-200"/>
                   </a>
                 </li>
               ))}
@@ -41,7 +41,7 @@ export default function Footer() {
             <ul className="flex flex-wrap gap-2 sm:flex-col">
               {navLinks.map((link, index) => (
                 <li key={index}>
-                  <Link  to={link.url} aria-label={link.name}>
+                  <Link className="hover:underline" to={link.url} aria-label={link.name}>
                   {link.name}
                 </Link>
                 </li>
@@ -55,7 +55,7 @@ export default function Footer() {
             <ul className="flex flex-wrap gap-2 sm:flex-col">
               {services.map((service, index) => (
                 <li key={index}>
-                  <Link className="capitalize" to={`/usluge/${service.pageUrl}`} aria-label={`Pogledajte ${service.servicesTitle}`}>
+                  <Link className="capitalize hover:underline" to={`/usluge/${service.pageUrl}`} aria-label={`Pogledajte ${service.servicesTitle}`}>
                   {service.servicesTitle}
                 </Link>
                 </li>
@@ -70,7 +70,7 @@ export default function Footer() {
             <ul className="flex flex-col space-y-2">
               {contactInfo.map((contact, index) => (
                 <li key={index}>
-                  <a href={contact.info} aria-label={`Kontaktirajte nas putem ${contact.name}`}>
+                  <a className="hover:underline" href={contact.info} aria-label={`Kontaktirajte nas putem ${contact.name}`}>
                   {contact.name}
                 </a>
                 </li>

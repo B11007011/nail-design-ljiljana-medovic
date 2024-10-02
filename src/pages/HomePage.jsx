@@ -5,6 +5,7 @@ import Services from "../sections/Services";
 import Footer from "../components/Footer";
 import Cta from "../sections/Cta";
 import Navbar from "../components/Navbar";
+import Counter from "../sections/Benefits";
 
 export default function HomePage() {
   return (
@@ -20,6 +21,7 @@ export default function HomePage() {
       <main>
         <Hero />
         <Intro />
+        <Counter/>
         <Services />
       </main>
       <Cta/>
