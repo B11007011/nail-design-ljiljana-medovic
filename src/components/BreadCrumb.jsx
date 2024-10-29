@@ -1,4 +1,5 @@
 import { Link, useLocation, useParams } from "react-router-dom";
+import { VscChevronRight } from "react-icons/vsc";
 
 const services = [
   {
@@ -56,17 +57,17 @@ export default function BreadCrumb({ page }) {
     <header>
       <div className="wrapper">
         <div className="bg-accent p-5 lg:p-8 flex justify-between items-center">
-          <ul className="flex flex-wrap gap-2 capitalize">
+          <ul className="flex items-center flex-wrap gap-1 capitalize">
             {!isServiceDetailPage && service  ? (
               <>
                 <li>
                   <Link to="/">početna</Link>
                 </li>
-                <li>/</li>
+                <li><VscChevronRight className="text-lg"/></li>
                 <li>
                   <Link to="/usluge">usluge</Link>
                 </li>
-                <li>/</li>
+                <li><VscChevronRight className="text-lg"/></li>
                 <li>{service.servicesTitle}</li>
               </>
             ) : (
@@ -74,7 +75,7 @@ export default function BreadCrumb({ page }) {
                 <li>
                   <Link to="/">početna</Link>
                 </li>
-                <li>/</li>
+                <li><VscChevronRight className="text-lg"/></li>
                 <li>{page}</li>
               </>
             )}

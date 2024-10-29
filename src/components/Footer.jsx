@@ -79,7 +79,7 @@ export default function Footer() {
           </section>
         </div>
 
-        <div className="py-6 sm:text-center">
+        <div className="py-10 sm:text-center">
           &copy; {currentYear} Nail Design Ljiljana Medović. Developed by&nbsp;
           <a
             className="underline"
