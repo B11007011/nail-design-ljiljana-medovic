@@ -6,7 +6,7 @@ import galleryManicure1 from "./assets/gallery-manicure-1.jpg";
 import galleryManicure2 from "./assets/gallery-manicure-2.jpg";
 import galleryManicure3 from "./assets/gallery-manicure-3.jpg";
 import galleryManicure4 from "./assets/gallery-manicure-4.jpg";
-import galleryManicure5 from "./assets/gallery-manicure-5.jpg";
+import galleryManicure5 from "./assets/gallery-manicure-5.webp";
 import galleryManicure6 from "./assets/gallery-manicure-6.jpg";
 import galleryManicure7 from "./assets/gallery-manicure-7.jpg";
 import galleryManicure8 from "./assets/gallery-manicure-8.jpg";
