@@ -1,5 +1,7 @@
 # Nail Design Ljiljana Medović
 
+![QR Code Component Screenshot](src/assets/screenshot.png)
+
 ## Description:
 
 Welcome to the Nail Design Ljiljana Medović website! This site showcases the services and work offered by her beauty salon, providing a glimpse into the expertise and beauty treatments available.
