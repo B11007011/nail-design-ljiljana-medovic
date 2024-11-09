@@ -26,8 +26,8 @@ export default function ServicesPageDetails() {
       <meta property="og:url" content="https://naildesign-ljiljanamedovic.com/usluge" />
       </Helmet>
     <Navbar/>
-    <BreadCrumb page="Usluge"/>
     <main>
+    <BreadCrumb page="Usluge"/>
     <section className='my-[50px] lg:my-[100px]'>
         <div className="wrapper">
             <div className='flex flex-col items-center gap-8 sm:flex-row lg:gap-16'>

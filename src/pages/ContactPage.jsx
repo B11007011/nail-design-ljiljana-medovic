@@ -16,8 +16,8 @@ export default function ContactPage() {
       <meta property="og:url" content="https://naildesign-ljiljanamedovic.com/kontakt" />
       </Helmet>
       <Navbar/>
-      <BreadCrumb page="Kontakt"/>
       <main>
+      <BreadCrumb page="Kontakt"/>
       <section className="my-[50px] lg:my-[100px]">
         <div className="wrapper">
           <div className="max-w-xl mx-auto mb-[50px] sm:text-center">

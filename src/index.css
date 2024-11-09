@@ -15,6 +15,9 @@ p {
   body {
     @apply bg-offWhite font-sans text-darkColor;
   }
+  main {
+    @apply pt-[100px];
+  }
   h1, h2, h3, h4 {
     @apply font-serif font-medium;
   }

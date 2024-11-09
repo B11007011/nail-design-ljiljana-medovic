@@ -16,8 +16,8 @@ export default function AboutPage() {
         <meta property="og:url" content="https://naildesign-ljiljanamedovic.com/o-nama" />
       </Helmet>
       <Navbar/>
-      <BreadCrumb page="O nama" />
       <main>
+      <BreadCrumb page="O nama" />
         <section>
           <div className="wrapper my-[50px] lg:my-[100px]">
             <div>

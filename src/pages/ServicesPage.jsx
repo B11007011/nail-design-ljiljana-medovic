@@ -17,8 +17,8 @@ export default function ServicesPage() {
       <meta property="og:url" content="https://naildesign-ljiljanamedovic.com/usluge" />
       </Helmet>
       <Navbar/>
-    <BreadCrumb page="Usluge"/>
     <main>
+    <BreadCrumb page="Usluge"/>
       <Services showTitle={false}/>
     </main>
     <Cta/>

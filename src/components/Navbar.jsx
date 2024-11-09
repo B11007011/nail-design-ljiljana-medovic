@@ -1,16 +1,41 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { navLinks } from "../data";
 import Menu from './Menu';
 
 export default function Navbar() {
-
+  const [showNavbar, setShowNavbar] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
   const location = useLocation();
   const [open, setOpen] = useState(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      
+      if (currentScrollY > lastScrollY) {
+        // scrolling down
+        setShowNavbar(false);
+      } else {
+        // scrolling up
+        setShowNavbar(true);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
+
   return (
     <>
-      <header className="relative bg-offWhite top-0 left-0 right-0 z-10">
+      <header className={`fixed inset-x-0 bg-offWhite z-10 transition-transform duration-300 ${
+          showNavbar ? "translate-y-0" : "-translate-y-full"
+        }`}>
       <div className="wrapper py-4 flex items-center justify-between  text-black lg:py-6">
         <Link to="/" className="logo">
           <img src="/logo.svg" alt="Nail Design Ljiljana Medović logo" />
