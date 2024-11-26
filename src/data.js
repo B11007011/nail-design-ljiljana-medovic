@@ -201,8 +201,8 @@ export const contactInfo = [
   },
   {
     type: "Email",
-    name: "ljiljana.medovic@gmail.com",
-    info: "mailto:ljiljana.medovic@gmail.com",
+    name: "ljiljananaildesign@gmail.com",
+    info: "mailto:ljiljananaildesign@gmail.com",
     icon: envelopeIcon,
     altIcon: "Envelope icon",
   },
