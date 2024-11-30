@@ -1,5 +1,4 @@
 @tailwind base;
-
 h1, h2, h3 {
   line-height: 1.1;
 }
@@ -12,6 +11,9 @@ p {
 
 
 @layer base {
+  html {
+    @apply text-[15px];
+  }
   body {
     @apply bg-offWhite font-sans text-darkColor;
   }

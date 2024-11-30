@@ -4,11 +4,11 @@ export default function Benefits() {
   return (
     <section>
         <div className="wrapper ">
-            <ul className="bg-accent p-8 lg:p-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <ul className="bg-accent px-4 py-[50px] flex flex-wrap justify-around gap-4">
             {counter.map((item, index) => (
-                <li className="space-y-4" key={index}>
-                    <h2>{item.counterNumber}<span className="font-sans font-light text-3xl lg:text-4xl">+</span></h2>
-                    <h3>{item.counterTitle}</h3>
+                <li className="max-w-[310px] text-center" key={index}>
+                    <h2 className="mb-2">{item.counterNumber}<span className="font-sans font-light text-3xl lg:text-4xl">+</span></h2>
+                    <h3 className="mb-4">{item.counterTitle}</h3>
                     <p>{item.counterDesc}</p>
                 </li>
             ))}

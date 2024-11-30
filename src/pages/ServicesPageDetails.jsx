@@ -44,7 +44,6 @@ export default function ServicesPageDetails() {
     <Accordion servicesList={service.servicesList} />
     <Gallery servicesGallery={service.servicesGallery}/>
     </main>
-
     <Cta/>
     <Footer/>
     </HelmetProvider>
