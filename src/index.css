@@ -11,11 +11,9 @@ p {
 
 
 @layer base {
-  html {
-    @apply text-[15px];
-  }
+  
   body {
-    @apply bg-offWhite font-sans text-darkColor;
+    @apply bg-offWhite font-sans text-darkColor text-[15px];
   }
   main {
     @apply pt-[100px];
