@@ -195,7 +195,7 @@ export const contactInfo = [
   {
     type: "Telefon",
     name: "+381621162977",
-    info: "tel:+886981606455",
+    info: "tel:+381621162977",
     icon: phoneIcon,
     altIcon: "Phone icon",
   },
